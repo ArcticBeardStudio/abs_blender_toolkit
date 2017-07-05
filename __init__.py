@@ -95,7 +95,7 @@ class SilhouetteMode(bpy.types.Operator):
 
         # Everything went okay? Well then we're in silhoutte mode!
         scene.is_silhoutte_mode = True
-        self.report({"INFO"}, "Set course for mark 3, 2, 4. Silhoutte Mode, ENGAGE!")
+        self.report({"INFO"}, "Set course for Silhoutte Mode. ENGAGE!")
         return {"FINISHED"}
 
 
