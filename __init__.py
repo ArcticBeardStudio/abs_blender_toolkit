@@ -72,7 +72,7 @@ class SilhouetteMode(bpy.types.Operator):
         
         # Ok, we're not in silhoutte mode. Get to it!
         material = None
-        if bpy.data.materials[scene.silhouette_material]:
+        if scene.silhouette_material in bpy.data.materials:
             material = bpy.data.materials[scene.silhouette_material]
         else:
             material = bpy.data.materials.new("SilhoutteMaterial")
