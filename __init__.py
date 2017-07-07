@@ -55,6 +55,7 @@ class SilhouetteMode(bpy.types.Operator):
         if space.type != "VIEW_3D":
             self.report({"ERROR"}, "Must be in 3D view")
             return {"FINISHED"}
+        # Check for object mode
 
         # Are we already in silhoutte mode?
         if (scene.is_silhoutte_mode):
